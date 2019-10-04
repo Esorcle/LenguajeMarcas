@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libro>
+    <titulo>El nombre del viento/</titulo>
+    <editorial>Salve</editorial>
+    <autor>Borshwer</autor>
+    <paginas> numero="600" </paginas>
+    <capitulos>
+        <capitulo nombre="El regreso" pagina_inicial="5" pagina_final="68"/>
+        <capitulo nombre="Peligros" pagina_inicial="69" pagina_final="150"/>
+        <capitulo nombre="Encuentros" pagina_inicial="151" pagina_final="235"/>
+        <capitulo nombre="Bajo sospecha" pagina_inicial="236" pagina_final="301"/>
+        <capitulo nombre="El legado" pagina_inicial="302" pagina_final="395"/>
+        <capitulo nombre="Viaje a Calimport" pagina_inicial="395" pagina_final="472"/>
+        <capitulo nombre="Viaje a Calimport" pagina_inicial="473" pagina_final="560"/>
+    </capitulos>
+</libro>

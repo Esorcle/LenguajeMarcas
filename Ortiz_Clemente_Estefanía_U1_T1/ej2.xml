@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<centro_comercial nombre="AL Sur">
+    <tiendas>
+        <tienda nombre="Game" n_parcelas="2" metros_cuadrados="150">
+            <encargado nombre="Manuel" apellidos="Guitérrez Fernan">
+                <telefono>652356897</telefono>
+                <NSS>AN 45235789645</NSS>
+            </encargado>
+        </tienda>
+
+        <tienda nombre="Bershka" n_parcelas="4" metros_cuadrados="300">
+            <encargado nombre="Saray" apellidos="Terrín Sales">
+                <telefono>945632578</telefono>
+                <NSS>AN 55235478521</NSS>
+            </encargado>
+        </tienda>
+
+        <tienda nombre="Primark" n_parcelas="6" metros_cuadrados="450">
+            <encargado nombre="Carlos" apellidos="Ortega Pérez">
+                <telefono>684512459</telefono>
+                <NSS>AN 56793578412</NSS>
+            </encargado>
+        </tienda>
+
+        <tienda nombre="Alcampo" n_parcelas="15" metros_cuadrados="800">
+            <encargado nombre="Catalina" apellidos="Cepol Fasín">
+                <telefono>693584126</telefono>
+                <NSS>AN 89456315297</NSS>
+            </encargado>
+        </tienda>
+
+        <tienda nombre="Oysho" n_parcelas="2" metros_cuadrados="150">
+            <encargado nombre="Pedro" apellidos="Sanchez Peres">
+                <telefono>684153268</telefono>
+                <NSS>AN 45548689645</NSS>
+            </encargado>
+        </tienda>
+
+        <tienda nombre="Zapatos Ventura" n_parcelas="1" metros_cuadrados="75">
+            <encargado nombre="Mirian" apellidos="Catrán Lope">
+                <telefono>657631989</telefono>
+                <NSS>AN 75615978465</NSS>
+            </encargado>
+        </tienda>
+
+        <tienda nombre="Marypaz" n_parcelas="1" metros_cuadrados="50">
+            <encargado nombre="Belén" apellidos="Lubian Traján">
+                <telefono>954632186</telefono>
+                <NSS>AN 12576435894</NSS>
+            </encargado>
+        </tienda>
+
+        <tienda nombre="Soler" n_parcelas="3" metros_cuadrados="120">
+            <encargado nombre="Luis" apellidos="Guiterrez Olvedo">
+                <telefono>623456789</telefono>
+                <NSS>AN 42356789451</NSS>
+            </encargado>
+        </tienda>
+
+        <tienda nombre="Joyería Sur" n_parcelas="1" metros_cuadrados="70">
+            <encargado nombre="Manuel" apellidos="Dinal Lores">
+                <telefono>694563245</telefono>
+                <NSS>AN 95432789645</NSS>
+            </encargado>
+        </tienda>
+
+        <tienda nombre="Farmacía" n_parcelas="1" metros_cuadrados="40">
+            <encargado nombre="Manuel" apellidos="Guiterrez Fernan">
+                <telefono>678451236</telefono>
+                <NSS>AN 68546289645</NSS>
+            </encargado>
+        </tienda>
+    </tiendas>
+</centro_comercial>
