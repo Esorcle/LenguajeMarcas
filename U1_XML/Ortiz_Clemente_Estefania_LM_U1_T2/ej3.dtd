@@ -1,0 +1,11 @@
+<!ELEMENT beatles (beatle+) >
+<!ELEMENT beatle (name+) >
+
+<!ELEMENT name (firstname, lastname) >
+<!ELEMENT firstname (#PCDATA) >
+<!ELEMENT lastname (#PCDATA)>
+
+<!ATTLIST beatle 
+link CDATA #REQUIRED 
+real CDATA #IMPLIED>
+
