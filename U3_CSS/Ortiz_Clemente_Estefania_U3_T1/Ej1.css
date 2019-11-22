@@ -1,0 +1,17 @@
+td {
+    border-bottom: 1px solid brown;
+}
+th {
+    background-color: black;
+    color: blanchedalmond;
+}
+tbody tr:hover {
+    color: crimson;
+    background-color: darkgray;
+}
+tr:nth-child(even) {
+    background-color: rgb(146, 167, 189);
+}
+tr:nth-child(odd) {
+    background-color: rgb(238, 238, 104);
+}

@@ -1,0 +1,27 @@
+table {
+    border: 1px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 40%;
+}
+thead {
+    background-color: rgb(165, 163, 163);
+    color: rgb(18, 49, 88);
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.titulo {
+    padding-top: 60px;
+    color: brown;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+.year {
+    font-weight: bold;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+
+
+}

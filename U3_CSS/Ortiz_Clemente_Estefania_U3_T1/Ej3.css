@@ -1,0 +1,14 @@
+h1, h2, strong, em, li li, td:nth-child(2){
+    color: red;
+    border-color: black;
+}
+.required {
+    color: red;
+}
+.location, label, legend{
+    color: blue;
+    border-color: black;
+}
+#twitter {
+    color: red;
+}
