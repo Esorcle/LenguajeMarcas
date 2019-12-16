@@ -1,0 +1,119 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+header p,
+ul,
+.lista li {
+    margin: 0%;
+    padding-left: 0%;
+}
+
+.container {
+    margin: 0% auto;
+    width: 80%;
+}
+
+header h1 {
+    background-color: black;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    margin-bottom: 0%;
+
+}
+
+header p {
+    text-align: right;
+
+}
+
+.menu {
+    background-color: black;
+    color: white;
+}
+
+.menu li:hover {
+    background-color: white;
+    color: black;
+}
+
+.menu li {
+    display: inline-block;
+    list-style: none;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.section {
+    overflow: hidden;
+}
+
+.lista {
+    float: left;
+    width: 25%;
+    margin-bottom: 5px;
+}
+
+.lista h4 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.lista ul {
+    padding-left: 0%;
+}
+
+.lista li,
+.lista p,
+.lista input {
+    list-style: none;
+    padding: 0.5em;
+}
+
+.gray {
+    background-color: gray;
+}
+
+#grande {
+    height: 150px;
+}
+
+.foto {
+    float: left;
+    width: 50%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.foto div {
+    background-color: gray;
+    margin: auto;
+    padding-top: 5px;
+    width: 28%;
+}
+
+img {
+    width: 95%;
+}
+
+.foto p {
+    padding-bottom: 7%;
+}
+
+.drcha {
+    margin-left: 0%;
+    padding: 1em;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    clear: both;
+    text-align: center;
+}
