@@ -1,4 +1,51 @@
-.menu:nth-child(1) {
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a {
+    /*  Quitar línea del enlace */
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    margin: 0PX auto;
+    position: relative;
+    width: 80%;
+}
+.container img {
+    width: 100%;
+    z-index: 0;
+}
+
+/*  Estilos cabecera */
+header {
+    background: transparent;
+    position: absolute;
+    height: 5%;
+    top: 0px;
+    width: 100%;
+    z-index: 100;
+}
+nav:first-child{
+    font-size: rem;
+}
+nav > div{
+    float: left;
+    padding-top: 10px;
+    width: 50%;
+
+}
+
+nav div div {
+    float: right;
+    
+    text-align: center;
+    width: 20%;
+}
+
+/*.menu:nth-child(1) {
 font-family: Lyft Pro,HelveticaNeue,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
 font-size: 1rem;
 font-weight: 300;
@@ -7,3 +54,4 @@ color: #373a3c;
 color: #ff00bf;
 color: #fff !important;
 }
+*/
