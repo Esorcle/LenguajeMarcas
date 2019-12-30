@@ -1,19 +1,24 @@
+/*  Aplicable a todo    */
 * {
+    font-family: Lyft Pro,HelveticaNeue,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
 a {
     /*  Quitar línea del enlace */
     text-decoration: none;
     color: white;
 }
 
+/*  Estilos contenedor  */
 .container {
     margin: 0PX auto;
     position: relative;
-    width: 80%;
+    width: 90%;
 }
+
 .container img {
     width: 100%;
     z-index: 0;
@@ -21,28 +26,67 @@ a {
 
 /*  Estilos cabecera */
 header {
-    background: transparent;
+    background: black;
+    opacity: 0.2;
     position: absolute;
-    height: 5%;
+    height: 8%;
     top: 0px;
     width: 100%;
     z-index: 100;
 }
-nav:first-child{
-    font-size: rem;
+nav {
+    padding-top: 1%;
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    width: 80%;
 }
-nav > div{
+
+.menu>div {
     float: left;
-    padding-top: 10px;
     width: 50%;
+}
+/* Estilo enlaces header    */
+header>a:hover {
+    color: #b8266f;
 
 }
+/*  Div del enlace Lyft   */
+.left a:link {
+    font-size: 40px;
+    font-weight: bolder;
+    height: 100%;
+}
 
-nav div div {
+/*  Div de la navegación   */
+.right div {
     float: right;
-    
+    height: 100%;
     text-align: center;
-    width: 20%;
+    /*Ancho al contenido y margen fijo para fijar la separación entre los div*/
+    width: fit-content;
+    margin-left: 8%;
+}
+
+.right a:link {
+    font-size: 18px;
+    font-weight: bolder;
+    height: 100%;
+}
+
+/*  Estilos formulario incripción   */
+.flotante {
+    background-color: white;
+    border-radius: 10px;
+    height: 80%;
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    width: 25%;
+}
+
+li {
+    list-style: none;
 }
 
 /*.menu:nth-child(1) {
