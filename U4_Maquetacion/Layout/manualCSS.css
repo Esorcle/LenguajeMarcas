@@ -1,5 +1,98 @@
-/*  Enlaces */
-a:link {estilos que queremos darle}
-a:visited {estilos a darle}
-a:active {estilos aquí}
-a:hover {estilos}
+/*  Maquetación tradicional */
+
+    /*  Herramientas online */
+        mockflow.com
+        moqups.com
+        wireframe.cc
+        balsamiq.com
+        ninjamock.com
+
+    /*  Estructura caja  */
+        Margin > Borde > Padding > Contenido
+
+    /*  Comportamiento caja */
+        Propiedad display
+            inline
+            inline-block
+            block
+            none
+            relacionados con tablas
+            Flex y Grid
+            Algo más en: https://developer.mozilla.org/es/docs/Web/CSS/display
+
+    /*  Tipos de Layout */
+            Fixed { tamaño (anchura) en pixels }
+            Elaxtic { tamaño (anchura) en em }
+            Fluid { tamaño (anchura) en % respecto etiq padre}
+            Max/Min { tamaño (anchura) con límites max-width / min-width: en pixels }
+            Responsive { tamaño (anchura) según pantalla }
+
+
+    /*  Maquetación web */
+        *  { 
+            -webkit-box-sizing: border-box;  
+            -moz-box-sizing: border-box;  
+            box-sizing: border-box;  
+        }
+
+    /*  Centrar Layout  */
+        /* Centrar horizontal   */
+            Elemt en línea  { text-align: center; } al padre
+            Elemt en bloque { margin: X auto; } debe de tener anchura
+            Varios elemt en bloque en la misma fila { text-align: center; } al padre
+                                                    { display: inline-block; } a los elementos
+                                                    Deben de tener anchura
+                                                    { con contenedores Flex }
+                                                
+        /*  Centrar vertical    */
+            El mismo { padding } arriba y abajo
+            { vertical-align: middle; } dentro de tabla o con prop display. Padre con altura fija
+            { contenedores Flex } 
+            { prop position }
+
+            /* Position */
+                /*  Centrado horizontal   */
+                { static }   por defecto. sigue el flujo
+                { relative } como static pero si le afecta top, bottom... o z-index a partir del flujo
+                { absolute } como fixed pero relacionada a la etiq antecesora con position: relative;
+                { fixed }    no atiende al scroll. permanece en el sitio
+                { sticky }   relative hasta una posición de scroll, luego como fixed
+                { inherit }  position no se propaga. Aplicable en los hijos
+                { z-index }  capas
+
+                /*  Centrado vertical   */
+                Dudas sobre este tema
+
+    /*  Columnas    */
+        column-count: nº de columnas;
+        column-width: ancho;
+        column-gap:   separación entre ellas;
+        column-rule:  estilo para la línea que las separa (como borde)
+        
+        /*  Prop columnas   */
+            column-span: si el elemnt sigue el nº de columnas o no. { all y none }
+            column-fill: cómo se rellenan. El contenedor debe tener altura. { auto o balance }
+            break-inside:avoid : si queremos que el element no quede roto de una columna a otra
+
+    /*  Elementos Flotantes */
+        Float { left o right }
+        Clear { right o left o both }
+
+    /*  Enlaces */
+        /*  Recordar HTML    */
+            { blank } abre en new ventana
+            { self }  abre en misma ventana. Por defecto
+            { parent } abre en el parent frame
+            { top }   abre en el cuerpo de la ventana
+            { framename } en el named frame  
+        
+        /*  Estilos enlaces  */
+        a:link {estilos que queremos darle}
+        a:visited {estilos a darle}
+        a:active {estilos aquí}
+        a:hover {estilos}
+
+    /*  Letras  */
+        /*  Tamaño  */
+            { rem } la base es el valor de font-size del elemento raí
+            { em }  la base es el valor de fuente/letra del elemento padre

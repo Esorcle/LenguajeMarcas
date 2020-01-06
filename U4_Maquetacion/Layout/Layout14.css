@@ -1,6 +1,6 @@
 /*  Aplicable a todo    */
 * {
-    font-family: Lyft Pro,HelveticaNeue,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    font-family: 'GothamPro', sans-serif;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -11,10 +11,13 @@ a {
     text-decoration: none;
     color: white;
 }
+p {
+    color: rgb(75, 74, 74);
+}
 
 /*  Estilos contenedor  */
 .container {
-    margin: 0PX auto;
+    margin: 0px auto;
     position: relative;
     width: 90%;
 }
@@ -26,11 +29,13 @@ a {
 
 /*  Estilos cabecera */
 header {
-    background: black;
-    opacity: 0.2;
+    background: rgb(0,0 , 0, 0.2);
+    /* Esto lo aplica a sus hijos tb, es preferible usar rgb+opacidad   */
+    /*opacity: 0.2;*/
+    /*overflow: hidden;*/
     position: absolute;
-    height: 8%;
-    top: 0px;
+    height: 7%;
+    top: 0%;
     width: 100%;
     z-index: 100;
 }
@@ -44,32 +49,37 @@ nav {
 
 .menu>div {
     float: left;
+    /*
+    padding-bottom: 100%;
+    margin-bottom: -100%;*/
     width: 50%;
 }
 /* Estilo enlaces header    */
-header>a:hover {
-    color: #b8266f;
-
+header div > a:hover  {
+    color:#dd168a;
 }
 /*  Div del enlace Lyft   */
-.left a:link {
-    font-size: 40px;
+.left a img {
+    width: 100%;
+}
+/*.left a:link {
+    font-size: 2.5rem;
     font-weight: bolder;
     height: 100%;
-}
+}*/
 
 /*  Div de la navegación   */
 .right div {
-    float: right;
+   float: right;
     height: 100%;
-    text-align: center;
+    text-align: right;
     /*Ancho al contenido y margen fijo para fijar la separación entre los div*/
     width: fit-content;
     margin-left: 8%;
 }
 
 .right a:link {
-    font-size: 18px;
+    font-size: 1.2rem;
     font-weight: bolder;
     height: 100%;
 }
@@ -77,25 +87,113 @@ header>a:hover {
 /*  Estilos formulario incripción   */
 .flotante {
     background-color: white;
-    border-radius: 10px;
+    border-radius: 5px;
     height: 80%;
+    padding-left: 1.5% ;
+    padding-right: 1.5% ;
     position: absolute;
     right: 10%;
     top: 10%;
-    width: 25%;
+    width: 23%;
+    z-index: 100;
 }
-
+h1 {
+    font-size: 2rem;
+}
+.flotante p {
+    text-align: justify;
+}
+ol {
+    padding-left: 0%;
+}
 li {
-    list-style: none;
+    list-style: none;  
+}
+li input {
+    border-radius: 5px;
+    height: 2.5rem;
+    margin-top: 5%;
+    width: 100%;
+    padding: 1em;
+}
+.flotante label {
+    margin-left: 1rem;
+}
+.flotante a {
+    color:  #dd168a;
+}
+.flotante button {
+    background-color:#dd168a;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    height: 4rem;
+    text-align: center;
+    margin-top: 10%;
+    width: 100%;
+}
+.flotante button:hover, .calculate:hover {
+    background-color: white;
+    color: #dd168a;
 }
 
-/*.menu:nth-child(1) {
-font-family: Lyft Pro,HelveticaNeue,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
-font-size: 1rem;
-font-weight: 300;
-line-height: 1.5;
-color: #373a3c;
-color: #ff00bf;
-color: #fff !important;
+/*  Estilo aside */
+aside {
+    font-size: 3rem;
+    font-weight: bold;
+    left: 10%;
+    position: absolute;
+    text-align: justify;
+    top: 35%;
+    z-index: 100;
 }
-*/
+aside p {
+    color: white;
+    margin: 0%;
+}
+
+/*  Estilo footer   */
+footer {
+    background-color: rgb(204, 224, 226);
+    height: 20%;
+    position: absolute;
+    top: 83%;
+    width: 100%;
+    z-index: 1;
+}
+footer form {
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+footer form input {
+    border-radius: 5px;
+    height: 2rem;
+}
+/*  Estilo a los input */
+.hour {
+    width: 7%;
+}
+.city {
+    width: 15%;
+}
+.calculate {
+    background-color: #dd168a;
+    color: white;
+    font-weight: 700;
+    height: 2.5rem;
+    width: 10%;
+}
+
+/*  Preguntar a Juan Diego 
+.left {
+    float: left;
+    padding-bottom: 100%;
+    margin-bottom: -100%;
+}
+.right {
+    float: right;
+    padding-bottom: 100%;
+    margin-bottom: -100%;
+}*/
