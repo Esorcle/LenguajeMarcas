@@ -92,7 +92,7 @@ header div>a:hover {
 .right {
     float: right;
     padding-top: 0.5%;
-    width: 60%;
+    width: 70%;
 }
 
 .right div {
@@ -114,7 +114,6 @@ header div>a:hover {
 .flotante {
     background-color: white;
     border-radius: 5px;
-    height: 80%;
     padding-left: 1.5%;
     padding-right: 1.5%;
     position: absolute;
