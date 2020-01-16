@@ -16,14 +16,23 @@ p {
     color: rgb(75, 74, 74);
 }
 
+/*  Es posible poner la font-family así, sin poner el link en el html:
+    @font-face {
+        font-family: "Nombre que quiero asignar";
+        src: url("");
+    }
+
 /*  Estilos contenedor  */
 .container {
     margin: 0px auto;
+    height: 100%;
     position: relative;
     width: 90%;
 }
 
 .container img {
+    position: absolute;
+    top: 0px;
     width: 100%;
     z-index: 0;
 }
@@ -33,17 +42,17 @@ header {
     background: rgb(0, 0, 0, 0.2);
     /* Esto lo aplica a sus hijos tb, es preferible usar rgb+opacidad   */
     /*opacity: 0.2;*/
-        
-    height: 8%;
-    position: absolute;
-    top: 0%;
+    overflow-y: auto;
+    /* No es neesario xq es elemento block
     width: 100%;
+    */
     z-index: 100;
 }
 
 nav {
+    float: left;
+    margin-left: 10%;
     padding-top: 1%;
-    position: absolute;
     left: 10%;
     top: 0%;
     width: 80%;
@@ -192,9 +201,9 @@ aside p {
 /*  Estilo footer   */
 footer {
     background-color: rgb(204, 224, 226);
-    bottom: 0%;
    padding-bottom: 2%;
     position: absolute;
+    bottom: 0px;
     width: 100%;
     z-index: 1;
 }
