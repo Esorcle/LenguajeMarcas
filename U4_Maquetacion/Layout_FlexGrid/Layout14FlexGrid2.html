@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Layout14</title>
+    <link rel="stylesheet" href="Layout14FlexGrid2.css">
+    <!--    Ask Juan Diego  -->
+    <link rel="stylesheet"
+        href="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="top">
+            <header></header>
+            <nav>
+                <div class="left" class="rosaLetra"><a href="#" target="self">
+                        <img src="logo-white.png">
+                        <img src="logo-pink.png">
+                    </a></div>
+                <div class="right"><a href="" target="blank">HELP</a></div>
+                <div class="right"><a href="" target="blank">PARTNERS</a></div>
+                <div class="right"><a href="" target="blank">BLOG</a></div>
+                <div class="right"><a href="" target="blank">DRIVE</a></div>
+                <div class="right"><a href="" target="blank">CITIES</a></div>
+            </nav>
+        
+            <form class="flotante">
+                <h1>Apply Now</h1>
+                <p>Enter your info, and then download the Lyft app to create ypur driver profile</p>
+                <ol>
+                    <li><input type="text" name="name" placeholder="First name" required></li>
+                    <li><input type="text" name="apellido" placeholder="Last name" required></li>
+                    <li><input type="email" name="email" placeholder="Email address" required></li>
+                    <li><input type="text" name="city" placeholder="City" required></li>
+                    <li><input type="tel" name="phone" placeholder="Phone number" required></li>
+                    <li><input type="text" name="promo" placeholder="Promo Code (optional)"></li>
+                </ol>
+
+                <input type="checkbox" name="agree"><label for="agree">I agree to the <a class="rosaLetra"
+                        href="https://help.lyft.com/hc/en-us/articles/115013081248-Lyft-s-coverage-areas"
+                        target="blank">Lyft
+                        serves</a></label>
+                <!--    Remember type submit para registro  -->
+                <button class="button" type="submit">BECOME A DRIVER</button>
+
+                <p>Already apllied? <a class="rosaLetra" href="" target="blank">Check the status of your application home</a></p>
+            </form>
+            <aside>
+                <P>Make up to $35/hr</P>
+                <p>Driving Your Car</p>
+            </aside>
+        </div>
+        <footer>
+            <form>
+                <h1>See How Much You Can Make</h1>
+                <p>How many hours do you want to drive this week?</p>
+                <input type="text" class="hour" name="time" placeholder="Hours">
+                <input type="text" class="city" name="city2" placeholder="City">
+                <input type="button" class="calculate button" value="CALCULATE">
+            </form>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,198 @@
+/*  Aplicable a todo    */
+* {
+    font-family: 'GothamPro', sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*  Reseteo de algunas propiedades  */
+a {
+    /*  Quitar línea del enlace */
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    color: rgb(75, 74, 74);
+}
+
+h1 {
+    margin: 0%;
+    font-size: 2rem;
+}
+
+ol {
+    padding-left: 0%;
+}
+
+li {
+    list-style: none;
+}
+/* Estilo color general    */
+nav div>a:hover,
+.rosaLetra {
+    color: #dd168a;
+}
+
+.button {
+    background-color: #dd168a;
+    color: white;
+}
+
+.button:hover {
+    background-color: white;
+    color: #dd168a;
+}
+
+/*  Estilos contenedor  */
+.container {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 100%;
+    grid-template-rows: 700px 200px;
+    margin: 0px auto;
+    width: 90%;
+}
+
+/*  Estilo parte superior   */
+.top {
+    background-image: url(fondo4.jpg);
+    background-size: cover;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    display: grid;
+    grid-template-columns: 10% 40% 45% 5%;
+    grid-template-rows: 80px 620px;
+}
+
+/*  Estilos cabecera */
+header {
+    background: rgb(0, 0, 0, 0.2);
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+nav {
+    align-items: center;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*  Div del enlace Lyft   */
+.left a img {
+    width: 10%;
+}
+
+.left {
+    width: 50%;
+}
+
+/* Para cambiar hover en un enlace   */
+.left a img:last-child {
+    display: none;
+}
+
+.left:hover img:last-child {
+    display: inline-block;
+}
+
+.left:hover img:first-child {
+    display: none;
+}
+
+.right {
+    width: 8%;
+    text-align: center;
+}
+
+/*  Estilos formulario incripción   */
+.flotante {
+    background-color: white;
+    border-radius: 5px;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    height: 660px;
+    justify-self: right;
+    margin-top: 5%;
+    padding: 3%;
+    width: 50%;
+    z-index: 100;
+}
+
+li input {
+    border-radius: 5px;
+    height: 2.5rem;
+    margin-top: 5%;
+    padding: 1em;
+    width: 100%;
+
+}
+
+.flotante button {
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    height: 4rem;
+    margin-top: 5%;
+    text-align: center;
+    width: 100%;
+}
+
+/*  Estilo aside */
+aside {
+    font-size: 3rem;
+    font-weight: bold;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    align-self: center;
+}
+
+aside p {
+    color: white;
+    margin: 0%;
+}
+
+/*  Estilo footer   */
+footer {
+    background-color: rgb(204, 224, 226);
+    grid-row-start: 2;
+    grid-row-end: 2;
+    z-index: 0;
+
+}
+
+footer form {
+    margin-left: 10%;
+    margin-top: 2%;
+}
+/*  Estilo a los input */
+footer form input {
+    border-radius: 5px;
+    height: 2rem;
+}
+
+
+.hour {
+    width: 7%;
+}
+
+.city {
+    width: 15%;
+}
+
+.calculate {
+    font-weight: 700;
+    height: 2.5rem;
+    width: 10%;
+}
