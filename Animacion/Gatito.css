@@ -1,0 +1,74 @@
+body {
+  background:  #d2d2d2 url(http://stash.rachelnabors.com/24ways2012/background_clouds.png);
+}
+
+.foreground, .background, .midground {
+  height: 100%;
+  width: 100%;
+  position: absolute; /* Porque queremos ajustar sobre el body (relative) */ 
+  top: 0; 
+  left: 0;
+}
+
+/* Establecer las capas de fondo*/
+.background {
+  background-image:    url(http://stash.rachelnabors.com/24ways2012/background_mountain5.png),    
+                       url(http://stash.rachelnabors.com/24ways2012/background_mountain4.png),  
+                       url(http://stash.rachelnabors.com/24ways2012/background_mountain3.png),
+                       url(http://stash.rachelnabors.com/24ways2012/background_mountain2.png),
+                       url(http://stash.rachelnabors.com/24ways2012/background_mountain1.png);
+  /* Repetición del background en el eje-X */
+  background-repeat: repeat-x;
+  /* Colocación del background desde esquina inferior izq */
+  background-position: 0 100%;
+  z-index: 1; /* Capa más atrás */
+  /* Declaración abreviada de la animación: nombreAnimacion + ritmo + duración + iteración */
+  animation: move_bg linear 40s infinite; /* linear = misma velocidad en todo momento */
+} 
+
+@keyframes move_bg { /* Nombre animación */
+  0% {background-position-x: 800px; } /* Posición inicial = tiempo 0s */
+  100% {background-position-x: 2400px;} /* Posición final = tiempo 40s */
+}
+
+/* Establecer la capa intermedia */
+.midground {
+  /* Todas las prop en una declaración: img + position + repeat */
+  background:  url(http://stash.rachelnabors.com/24ways2012/midground_grass.png) 0 100% repeat-x;
+  z-index: 2;
+  animation: move_mg linear 20s infinite; 
+}
+
+@keyframes move_mg {
+  0% {background-position: -3000px 100%;}
+  100% {background-position: 0 100%;}
+}
+
+/* Establecer la capa del primer plano */
+.foreground {
+  background:  url(http://stash.rachelnabors.com/24ways2012/foreground_grass.png) 0 100% repeat-x;
+  z-index: 3;
+  animation: move_fg linear 10s infinite ; 
+}
+
+@keyframes move_fg {
+  0% {background-position: -3582px 100%;}
+  100% {background-position: 0 100%;}
+}
+
+/* Establecer gato */
+.cat{
+  background: url(http://stash.rachelnabors.com/img/codepen/tuna_sprite.png) 0 0 no-repeat; 
+  height: 200px;
+  width: 400px;
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  margin-left: -200px; /* Ajustar al centro del minino */
+  animation: walk 1s steps(12) infinite; /* Fotograma, prop end */
+}
+
+@keyframes walk {
+  0% {background-position: 0 0;}
+  100% {background-position: 0 -2391px;} /* Se desplaza hacía arriba */ 
+}
