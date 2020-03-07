@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Reseteo y color */
+ul {
+    list-style: none;
+}
+
+.fa,
+main,
+button,
+nav {
+    color: white;
+}
+
+.head2 button {
+    background-color: green;
+}
+
+a {
+    border: 1px solid violet;
+    color: violet;
+    text-decoration: none;
+    margin-top: 2%;
+}
+
+/*  Cabecera */
+header {
+    background-color: rgb(0, 0, 0);
+    padding: 2%;
+
+}
+
+header img {
+    width: 10%;
+}
+
+.fa {
+
+    font-size: 2.5vw;
+    float: right;
+}
+
+main {
+    background-color: rgb(68, 67, 67);
+}
+
+.head1 h1 {
+    margin-top: 0px;
+    margin: auto;
+    width: 80%;
+}
+
+.head1 p {
+    margin-bottom: 0px;
+}
+
+/* También para parte intermedia */
+.head1,
+.head2,
+.head2 button,
+.intermedia,
+.intermedia p a,
+.ulti {
+    text-align: center;
+    padding: 3%;
+}
+
+.head2 button,
+.intermedia a {
+    border-radius: 8px;
+    font-size: 2vw;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.enlace {
+    margin-top: 7%;
+}
+
+/* Estilo último section */
+.ulti div img {
+    width: 40%;
+}
+
+@media screen and (max-width: 576px) {
+
+    nav,
+    label,
+    input,
+    .head2 p {
+        display: none;
+    }
+
+    .head2 {
+        font-size: 4vw;
+        margin: auto;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    nav {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    form {
+        background-color: white;
+        color: black;
+        padding: 2%;
+        text-align: left;
+    }
+
+    label,
+    input,
+    .head2 button,
+    .head2 p {
+        margin-bottom: 2%;
+        width: 100%;
+    }
+
+    label {
+        font-weight: bold;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .fa {
+        display: none !important;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+    }
+
+    nav {
+        font-weight: bold;
+        width: 40%;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    main {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .head1 {
+        display: flex;
+        flex-wrap: wrap;
+        vertical-align: baseline;
+        order: 2;
+    }
+
+    .head1 h1 {
+        margin-bottom: 2%;
+    }
+
+    .head2 {
+        order: 1;
+    }
+
+    .ulti {
+        display: flex;
+    }
+
+    .ulti div {
+        width: 50%;
+    }
+
+    .utli div img {
+        width: 100%;
+    }
+
+    .divUlti {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
