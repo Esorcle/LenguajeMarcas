@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  font-family: 'GothamPro', sans-serif;
+}
+/*Reseteo de porpiedades*/
+p {
+  margin: 0px !important;
+}
+
+/* Texto responsivo*/
+.navbar-brand,
+section {
+  font-size: calc(1.25rem + 1vw) !important;
+}
+.photo p:nth-child(2) {
+  font-size: calc(1.25rem + 2vw) !important;
+}
+.number {
+  font-size: calc(1.9rem + 1vw) !important;
+}
+.nav-item {
+  font-size: calc(.50rem + 1vw) !important;
+}
+
+/* Colores */
+.azul {
+  color: rgb(90, 148, 214);
+}
+section {
+  background-color: rgb(240, 241, 242);
+}
+.one {
+  background-color: rgba(255, 156, 89, 0.822);
+}
+.two {
+  background-color: rgb(250, 184, 84);
+}
+.three {
+  background-color: rgb(255, 220, 104);
+}
+.four {
+  background-color: rgb(109, 175, 95);
+}
+.five {
+  background-color: rgb(46, 87, 46);
+}
+
+  /* Estilos generales */
+nav {
+  min-height: 100px;
+  z-index: 100;
+}
+button {
+  border-width: 0px !important;
+}
+.photo {
+  background-image: url(fondo2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 40%, ;
+}
+.photo>div {
+  /* Da el centrado al texto con respecto la foto. No he sido capaz de hacerlo de otra manera*/
+  margin-top: 100px;
+}
+
+@media screen and (min-width: 768px) {
+  .altura { 
+    /*Da la altura al section */
+    margin-bottom: 150px !important;
+  }
+  .one,
+  .two,
+  .three,
+  .four,
+  .five {
+    transform: rotate(180deg);
+    writing-mode: tb-rl;
+  }
+  .number {
+    transform: rotate(90deg);
+  }
+  article>div {
+    /*Para poder dar margenes a los div */
+    max-width: 49% !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  article>div {
+    /*Para poder dar margenes a los div */
+    max-width: 24% !important;
+
+  }
+}
