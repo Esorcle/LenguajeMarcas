@@ -1,0 +1,214 @@
+// Variables 
+
+// Colores 
+$contenidoCV-background: rgb(198, 213, 228);
+$sidebar-background: rgb(15, 40, 95);
+$sidebar-color: white;
+
+// Estructura  
+$border: 1px solid $sidebar-background;
+$border-radio: 8px;
+$separacion-div: 1%;
+$separacion-lineas: 2;
+
+// Responsivo 
+$breakpoint: ("pequeño": 576px,
+    "medio": 768px,
+    "grande": 992px);
+
+/* Reseteo y estilos generales */
+* {
+    box-sizing: border-box;
+    font-family: 'Baloo 2', cursive;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin: 0px auto;
+}
+
+li {
+    list-style-type: circle;
+}
+
+i,
+a,
+.text,
+.sidebar {
+    color: $sidebar-color;
+}
+
+/* Estilos portada */
+header {
+    /* repeat, position x,  position y, attachment */
+    align-items: center;
+    background: url(tecnologia.jpg) no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    height: 890px;
+    justify-content: right;
+
+}
+
+.text {
+    margin-right: 10%;
+    z-index: 10;
+
+    h1 {
+        font-weight: 100;
+        letter-spacing: 4px;
+        text-transform: capitalize;
+        margin: 0 0 10px;
+        /* Centrar los 2 párrafos */
+    }
+}
+
+/* Estilo contenido CV */
+.contenidoCV {
+    background-color: $contenidoCV-background;
+    border: $border;
+    border-radius: $border-radio;
+    color: $sidebar-background;
+    margin-top: $separacion-div;
+}
+
+/* Estilos sidebar */
+.sidebar {
+    background-color: $sidebar-background;
+    color: $sidebar-color;
+
+    address {
+        display: flex;
+        line-height: $separacion-lineas;
+        padding: $separacion-div;
+        width: 90%;
+    }
+
+    img {
+        border-radius: $border-radio;
+        margin-bottom: $separacion-div;
+
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    /* Estilos sidebar */
+    .sidebar {
+        img {
+            width: 100%;
+        }
+
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+
+    /* Estilos sidebar */
+    .sidebar {
+
+        .foto {
+            width: 40%;
+        }
+
+        img {
+            width: 70%;
+        }
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .skils {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+
+    /* Estilo contenido CV */
+    .contenidoCV {
+        display: flex;
+    }
+
+    /* Estilos sidebar */
+    .sidebar {
+        display: flex;
+        flex-wrap: wrap;
+        padding: $separacion-div;
+        padding-bottom: $separacion-div*2;
+        width: 40%;
+
+        address {
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-left: $separacion-div*4;
+
+            img {
+                margin-left: 25%;
+                width: 50%;
+            }
+
+            .iconos {
+                display: flex;
+                justify-content: space-between;
+                width: 16%;
+
+            }
+
+            i {
+                font-size: x-large
+            }
+        }
+
+        .skils {
+            .skilsSoft {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                line-height: $separacion-lineas;
+            }
+
+            h3 {
+                width: 100%;
+            }
+
+            .big {
+                width: 40%;
+            }
+        }
+    }
+
+    /* Estilo contenido */
+    .contenido {
+        padding-left: $separacion-div;
+        padding-right: $separacion-div;
+
+        div {
+            width: 100%;
+        }
+
+        h1 {
+            background-color: $sidebar-background;
+            border-radius: $border-radio;
+            color: $sidebar-color;
+            padding: $separacion-div;
+        }
+
+        h3 {
+            margin-bottom: 0px;
+        }
+
+        h4,
+        .formacion p {
+            margin-top: 0px;
+        }
+    }
+
+}

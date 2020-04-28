@@ -1,0 +1,257 @@
+@charset "UTF-8";
+/* Img cabecera */
+header {
+  background: url(diagrama.jpg) no-repeat center center fixed;
+}
+
+/* Colores */
+.contenidoCV {
+  background-color: #c6d5e4;
+  color: #0f285f;
+}
+
+.sidebar {
+  background-color: #0f285f;
+}
+
+.contenido h1 {
+  background-color: #0f285f;
+}
+
+.modulo table th:hover,
+.modulo table td:hover {
+  background-color: white;
+  color: #0f285f;
+}
+.modulo table span {
+  color: #0f285f;
+}
+
+i,
+a,
+.text,
+.sidebar,
+.contenido h1 {
+  color: white;
+}
+
+.contenido a {
+  color: gray;
+}
+
+/* Colores tabla */
+tbody tr:nth-child(1) {
+  background-color: #b4cdfc;
+}
+
+tbody tr:nth-child(2) {
+  background-color: #9ebffc;
+}
+
+tbody tr:nth-child(3) {
+  background-color: #94b7f8;
+}
+
+tbody tr:nth-child(4) {
+  background-color: #7ea2eb;
+}
+
+tbody tr:nth-child(5) {
+  background-color: #7197e2;
+}
+
+tbody tr:nth-child(6) {
+  background-color: #5e87d8;
+}
+
+/* Reseteo y estilos generales */
+* {
+  box-sizing: border-box;
+  font-family: "Baloo 2", cursive;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0px auto;
+}
+
+li {
+  list-style-type: circle;
+}
+
+/* Para etiquetas texto */
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.75rem;
+}
+
+/* Border-radio */
+.contenidoCV,
+.foto img,
+.contenido h1,
+th:hover,
+td:hover {
+  border-radius: 8px;
+}
+
+/* Estilos portada */
+header {
+  /* repeat, position x,  position y, attachment */
+  align-items: center;
+  background-size: cover;
+  border-radius: 8px;
+  display: flex;
+  height: 890px;
+  justify-content: right;
+}
+
+.text {
+  margin-right: 10%;
+  z-index: 10;
+}
+.text h1 {
+  font-size: 2rem;
+  font-weight: 100;
+  letter-spacing: 4px;
+  text-transform: capitalize;
+  margin: 0 0 10px;
+  /* Centrar los 2 párrafos */
+}
+
+/* Estilo contenido CV */
+.contenidoCV {
+  border: 1px solid #0f285f;
+  border-radius: 8px;
+  margin-top: 1%;
+}
+
+/* Estilos sidebar */
+.sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+  padding-top: 5%;
+}
+.sidebar .foto {
+  flex-basis: 60%;
+  margin-bottom: 1%;
+}
+.sidebar .foto img {
+  box-shadow: 2px 2px 5px white;
+  border-radius: 8px;
+  width: 90%;
+}
+.sidebar i {
+  margin-right: 1%;
+}
+
+/* Estilo contenido */
+.contenido {
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.contenido div {
+  width: 100%;
+}
+.contenido h1 {
+  border-radius: 8px;
+  padding: 1%;
+}
+.contenido h3 {
+  margin-bottom: 0px;
+}
+.contenido h4,
+.contenido .formacion p {
+  margin-top: 0px;
+}
+.contenido .modulo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.contenido .modulo h1 {
+  width: 100%;
+}
+.contenido .modulo table {
+  border: 1px solid #0f285f;
+  border-radius: 16px;
+  padding: 0.5rem;
+}
+.contenido .modulo table th {
+  border-bottom: 1px solid #0f285f;
+}
+.contenido .modulo table tr td:nth-last-child(1) {
+  text-align: center;
+}
+
+@media screen and (min-width: 576px) and (max-width: 991px) {
+  .sidebar {
+    justify-content: space-between;
+    padding: 5%;
+  }
+  .sidebar .foto {
+    flex-basis: 30%;
+    max-width: 30%;
+  }
+  .sidebar .contacto {
+    line-height: 30px;
+    order: 1;
+    min-width: 60%;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* Estilo contenido CV */
+  .contenidoCV {
+    display: flex;
+  }
+
+  /* Estilos sidebar */
+  .sidebar {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    padding: 20px;
+    width: 30%;
+  }
+  .sidebar div {
+    text-align: center;
+    width: 100%;
+  }
+  .sidebar .contacto {
+    line-height: 2.6;
+  }
+  .sidebar div li,
+.sidebar div div {
+    text-align: left;
+  }
+  .sidebar .foto {
+    flex-basis: 100%;
+  }
+}
+
+/*# sourceMappingURL=CvBlue.css.map */

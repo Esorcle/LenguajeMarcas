@@ -1,0 +1,163 @@
+@charset "UTF-8";
+/* Reseteo y estilos generales */
+* {
+  box-sizing: border-box;
+  font-family: "Baloo 2", cursive;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0px auto;
+}
+
+li {
+  list-style-type: circle;
+}
+
+i,
+a,
+.text,
+.sidebar {
+  color: white;
+}
+
+/* Estilos portada */
+header {
+  /* repeat, position x,  position y, attachment */
+  align-items: center;
+  background: url(tecnologia.jpg) no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  height: 890px;
+  justify-content: right;
+}
+
+.text {
+  margin-right: 10%;
+  z-index: 10;
+}
+.text h1 {
+  font-weight: 100;
+  letter-spacing: 4px;
+  text-transform: capitalize;
+  margin: 0 0 10px;
+  /* Centrar los 2 párrafos */
+}
+
+/* Estilo contenido CV */
+.contenidoCV {
+  background-color: #c6d5e4;
+  border: 1px solid #0f285f;
+  border-radius: 8px;
+  color: #0f285f;
+  margin-top: 1%;
+}
+
+/* Estilos sidebar */
+.sidebar {
+  background-color: #0f285f;
+  color: white;
+}
+.sidebar address {
+  display: flex;
+  line-height: 2;
+  padding: 1%;
+  width: 90%;
+}
+.sidebar img {
+  border-radius: 8px;
+  margin-bottom: 1%;
+}
+
+@media screen and (max-width: 576px) {
+  /* Estilos sidebar */
+  .sidebar img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
+  /* Estilos sidebar */
+  .sidebar .foto {
+    width: 40%;
+  }
+  .sidebar img {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 576px) {
+  .skils {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* Estilo contenido CV */
+  .contenidoCV {
+    display: flex;
+  }
+
+  /* Estilos sidebar */
+  .sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1%;
+    padding-bottom: 2%;
+    width: 40%;
+  }
+  .sidebar address {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 4%;
+  }
+  .sidebar address img {
+    margin-left: 25%;
+    width: 50%;
+  }
+  .sidebar address .iconos {
+    display: flex;
+    justify-content: space-between;
+    width: 16%;
+  }
+  .sidebar address i {
+    font-size: x-large;
+  }
+  .sidebar .skils .skilsSoft {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    line-height: 2;
+  }
+  .sidebar .skils h3 {
+    width: 100%;
+  }
+  .sidebar .skils .big {
+    width: 40%;
+  }
+
+  /* Estilo contenido */
+  .contenido {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  .contenido div {
+    width: 100%;
+  }
+  .contenido h1 {
+    background-color: #0f285f;
+    border-radius: 8px;
+    color: white;
+    padding: 1%;
+  }
+  .contenido h3 {
+    margin-bottom: 0px;
+  }
+  .contenido h4,
+.contenido .formacion p {
+    margin-top: 0px;
+  }
+}
+
+/*# sourceMappingURL=Cv.css.map */
