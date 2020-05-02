@@ -1,0 +1,6 @@
+/* Para etiquetas texto */
+@for $i from 1 through 6 {
+    h#{$i} {
+        font-size: nth($font-list, $i);
+    }
+}

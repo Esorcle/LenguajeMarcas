@@ -1,0 +1,137 @@
+//Estructura de control que da color según tema
+@if $blue-theme==true {
+
+    /* Img cabecera */
+    header {
+        background: url(diagrama.jpg) no-repeat center center fixed;
+    }
+
+    /* Colores */
+    $border: $border $sidebar-background-blue;
+
+    nav {
+        a {
+            color: $sidebar-background-blue;
+        }
+
+        a:hover {
+            background-color: $sidebar-background-blue;
+            border-radius: $border-radio;
+            color: white;
+        }
+    }
+
+    .contenidoCV {
+        background-color: $contenidoCV-background-blue;
+        color: $sidebar-background-blue;
+    }
+
+    .sidebar {
+        background-color: $sidebar-background-blue;
+    }
+
+    .contenido {
+        h1 {
+            background-color: $sidebar-background-blue;
+        }
+
+        .card {
+            background-color: $contenidoCV-background-blue;
+        }
+    }
+
+    .modulo table {
+
+        th:hover,
+        td:hover {
+            background-color: $sidebar-color;
+            color: $sidebar-background-blue;
+        }
+
+        span {
+            color: $sidebar-background-blue;
+        }
+    }
+}
+
+@else if $green-theme==true {
+
+    /* Img cabecera */
+    header {
+        background: url(fondoPanal.jpg) no-repeat center center fixed;
+    }
+
+    /* Colores */
+    $border: $border $sidebar-background-green;
+
+    nav {
+
+        a {
+            color: $sidebar-background-green;
+
+        }
+
+        a:hover {
+            background-color: $sidebar-background-green;
+            border-radius: $border-radio;
+            color: white;
+        }
+    }
+
+    .contenidoCV {
+        background-color: $contenidoCV-background-green;
+        color: $sidebar-background-green;
+    }
+
+    .sidebar {
+        background-color: $sidebar-background-green;
+    }
+
+    .contenido {
+        h1 {
+            background-color: $sidebar-background-green;
+        }
+
+        .card {
+            background-color: $contenidoCV-background-green;
+        }
+    }
+
+    .modulo table {
+
+        th:hover,
+        td:hover {
+            background-color: $sidebar-color;
+            color: $sidebar-background-green;
+        }
+
+        span {
+            color: $sidebar-background-green;
+        }
+    }
+
+}
+
+//Estructura de control que le da el color a la tabla
+/* Colores tabla */
+@if $blue-theme==true {
+    //$color-table-aux: $color-row-list-blue;
+    $num: 0;
+
+    @for $num from 1 to 7 {
+        tbody tr:nth-child(#{$num}) {
+            background-color: nth($color-row-list-blue, $num);
+        }
+    }
+}
+
+@else {
+    // $color-table-aux: $color-row-list-green;
+    $num: 0;
+
+    @for $num from 1 to 7 {
+        tbody tr:nth-child(#{$num}) {
+            background-color: nth($color-row-list-green, $num);
+        }
+    }
+}

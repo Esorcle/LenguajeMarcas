@@ -1,0 +1,6 @@
+//Función para calcular Anchura en base 10
+$numcolumnas: 10;
+
+@function calcularAnchura($ancho) {
+    @return percentage($ancho/$numcolumnas);
+}
