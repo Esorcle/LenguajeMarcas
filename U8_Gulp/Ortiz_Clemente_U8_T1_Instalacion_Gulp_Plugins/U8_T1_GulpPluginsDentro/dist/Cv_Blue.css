@@ -1,0 +1,320 @@
+@charset "UTF-8";
+@import "/fontawesome/css/font-awesome.min.css";
+table {
+  border-collapse: inherit;
+  border: 1px solid;
+  border-radius: 16px;
+  padding: 0.5rem;
+}
+table th {
+  border-bottom: 1px solid;
+}
+table tr td:nth-last-child(1) {
+  text-align: center;
+}
+
+/* Img cabecera */
+header {
+  background: url(../img/diagrama.jpg) no-repeat center center fixed;
+}
+
+/* Colores */
+nav a {
+  color: #0f285f;
+}
+nav a:hover {
+  background-color: #0f285f;
+  border-radius: 8px;
+  color: white;
+}
+
+.contenidoCV {
+  background-color: #c6d5e4;
+  color: #0f285f;
+}
+
+.sidebar {
+  background-color: #0f285f;
+}
+
+.contenido h1 {
+  background-color: #0f285f;
+}
+.contenido .card {
+  background-color: #c6d5e4;
+}
+
+.modulo table th:hover,
+.modulo table td:hover {
+  background-color: white;
+  color: #0f285f;
+}
+.modulo table span {
+  color: #0f285f;
+}
+
+/* Colores tabla */
+tbody tr:nth-child(1) {
+  background-color: #b4cdfc;
+}
+
+tbody tr:nth-child(2) {
+  background-color: #9ebffc;
+}
+
+tbody tr:nth-child(3) {
+  background-color: #94b7f8;
+}
+
+tbody tr:nth-child(4) {
+  background-color: #7ea2eb;
+}
+
+tbody tr:nth-child(5) {
+  background-color: #7197e2;
+}
+
+tbody tr:nth-child(6) {
+  background-color: #5e87d8;
+}
+
+/* Para etiquetas texto */
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.75rem;
+}
+
+nav {
+  box-shadow: 0 3px 6px 3px rgba(0, 0, 0, 0.06);
+  font-weight: bold;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar-header button i {
+    font-size: 32px;
+    line-height: 55px;
+  }
+
+  /*.anchor::before {
+      content: "";
+      display: block;
+      height: 125px;
+      margin: -125px 0 0;
+
+  }*/
+}
+@media screen and (min-width: 992px) {
+  /* Estilo nav */
+  .nav-item {
+    height: 67px;
+    padding: 22px 20px;
+  }
+
+  /* Ajuste del nav */
+  .anchor::before {
+    content: "";
+    display: block;
+    height: 95px;
+    margin: -95px 0 0;
+  }
+}
+.sidebar i, .sidebar a,
+.text,
+.sidebar,
+.contenido h1, .contenido a {
+  color: white;
+}
+
+.contenido a {
+  color: gray;
+}
+
+/* Reseteo y estilos generales */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Baloo 2";
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.025rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.skills li {
+  list-style-type: circle;
+}
+
+/* Border-radio */
+.contenidoCV,
+.foto img,
+.contenido h1,
+th:hover,
+td:hover, header {
+  border-radius: 8px;
+}
+
+/* Estilos portada */
+header {
+  /* repeat, position x,  position y, attachment */
+  align-items: center;
+  background-size: cover;
+  display: flex;
+  height: 890px;
+  justify-content: right;
+}
+
+.text {
+  margin-right: 10%;
+  z-index: 10;
+}
+.text h1 {
+  font-size: 2rem;
+  font-weight: 100;
+  letter-spacing: 4px;
+  text-transform: capitalize;
+  margin: 0 0 10px;
+  /* Centrar los 2 párrafos */
+}
+
+/* Estilo contenido CV */
+.contenidoCV {
+  border: 1px solid;
+  margin-top: 1%;
+}
+
+/* Estilos sidebar */
+.sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+  padding-top: 5%;
+}
+.sidebar .foto {
+  flex-basis: 60%;
+  margin-bottom: 1%;
+}
+.sidebar .foto img {
+  box-shadow: 2px 2px 5px white;
+  width: 90%;
+}
+.sidebar i {
+  margin-right: 1%;
+}
+
+/* Estilo contenido */
+.contenido {
+  padding: 1%;
+}
+.contenido div {
+  width: 100%;
+}
+.contenido .experiencia {
+  margin-bottom: 1%;
+}
+.contenido h1 {
+  padding: 1%;
+}
+.contenido h3 {
+  margin-bottom: 0px;
+}
+.contenido h4,
+.contenido .formacion p {
+  margin-top: 0px;
+}
+.contenido .modulo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /*
+          table {
+              border-collapse: inherit;
+              //El normalizador de BootStrap pone collaspe. Y hay que deshabilitarlo con inherit
+              border: $border;
+              border-radius: $border-radio*2;
+              padding: 0.5rem;
+
+              th {
+                  border-bottom: $border;
+              }
+
+              tr td:nth-last-child(1) {
+                  text-align: center;
+              }
+          }*/
+}
+.contenido .modulo h1 {
+  width: 100%;
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .sidebar {
+    justify-content: space-between;
+    padding: 5%;
+  }
+  .sidebar .foto {
+    flex-basis: 30%;
+    max-width: 30%;
+  }
+  .sidebar .contacto {
+    line-height: 30px;
+    order: 1;
+    min-width: 60%;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* Estilo contenido CV */
+  .contenidoCV {
+    display: flex;
+  }
+
+  /* Estilos sidebar */
+  .sidebar {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    padding: 20px;
+    width: 30%;
+  }
+  .sidebar div {
+    text-align: center;
+    width: 100%;
+  }
+  .sidebar .contacto {
+    line-height: 2.6;
+  }
+  .sidebar div li,
+.sidebar div div {
+    text-align: left;
+  }
+  .sidebar .foto {
+    flex-basis: 70%;
+  }
+}
+
+/*# sourceMappingURL=Cv_Blue.css.map */
