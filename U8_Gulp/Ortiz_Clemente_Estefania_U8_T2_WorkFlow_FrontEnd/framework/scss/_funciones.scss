@@ -1,0 +1,9 @@
+//Función para calcular Anchura en base 10
+
+/// @group layout
+/// @example - Función que devuleve la anchura correspondiente al elemento de la maquetación
+/// @parameter {integer} $ancho - Número de columnas en el ancho de la fila que va a ocupar
+/// @return {integer} - Pocentaje, sin el símbolo %, del ancho correspondiente al alemento
+@function calcularAnchura($ancho) {
+    @return percentage($ancho/$numcolumnas);
+}

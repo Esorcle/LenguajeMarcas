@@ -1,0 +1,26 @@
+//// @author Estefanía Ortiz
+
+// Variables estructurales
+
+/// Número de columnas para tomar ancho 
+/// @group estructura
+$numcolumnas: 10;
+/// Bordes 
+/// @group estructura
+$border: 1px solid;
+$border-radio: 8px;
+
+/// Separación entre elementos
+/// @group estructura
+$separacion-div: 1%;
+$separacion-lineas: 2;
+
+/// Tamaño de la fuente fuente
+/// @group estructura
+$font-list: (2rem, 1.75rem, 1.5rem, 1.25rem, 1rem, 0.75rem);
+$font-size-generic: 1rem;
+
+/// Estilo de las listas
+/// @group estructura
+$list-style: circle;
+

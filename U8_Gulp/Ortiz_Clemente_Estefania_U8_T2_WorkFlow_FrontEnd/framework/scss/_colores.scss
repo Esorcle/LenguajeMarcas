@@ -1,0 +1,44 @@
+//// @author Estefanía Ortiz
+
+//Colores generales
+
+// Color tema
+///Variable que da color del tema azul
+/// @group colores
+$blue-theme: true;
+///Variable que da color del tema verde
+/// @group colores
+$green-theme: false;
+
+// Color sidebar
+/// Color de fondo del sidebar
+/// @group colores
+$sidebar-background-blue: rgb(15, 40, 95);
+$sidebar-background-green: rgb(11, 66, 59);
+
+/// Color de la letra del sidebar
+$sidebar-color: white;
+
+// Color del contenido
+///Color de fondo del contenido
+/// @group colores
+$contenidoCV-background-green: rgb(223, 245, 237);
+$contenidoCV-background-blue: rgb(198, 213, 228);
+
+//Color tabla
+/// Color degradado de las filas de la tabla para tema azul
+/// @group colores
+$color-row-list-blue: rgb(180, 205, 252),
+rgb(158, 191, 252),
+rgb(148, 183, 248),
+rgb(126, 162, 235),
+rgb(113, 151, 226),
+rgb(94, 135, 216);
+/// Color degradado de las filas de la tabla para tema verde
+/// @group colores
+$color-row-list-green: rgb(168, 238, 195),
+rgb(139, 236, 183),
+rgb(129, 224, 176),
+rgb(109, 199, 154),
+rgb(89, 187, 146),
+rgb(81, 187, 137);

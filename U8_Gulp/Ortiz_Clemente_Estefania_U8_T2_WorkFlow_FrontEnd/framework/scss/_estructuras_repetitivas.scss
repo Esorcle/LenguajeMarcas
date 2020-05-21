@@ -1,0 +1,10 @@
+//// @author Estefanía Ortiz
+
+/// @group estructura
+
+/// Estructura de control para dar color a la tabla
+@for $i from 1 through 6 {
+    h#{$i} {
+        font-size: nth($font-list, $i);
+    }
+}

@@ -1,0 +1,43 @@
+//// @author Estefanía Ortiz
+
+/// Estilos navbar en los distintos breakpoints
+/// @group estructura
+
+nav {
+    box-shadow: 0 3px 6px 3px rgba(0, 0, 0, .06);
+    font-weight: bold;
+}
+
+@media screen and (max-width: 992px) {
+
+    .navbar-header button i {
+        font-size: 32px;
+        line-height: 55px;
+    }
+
+    /*.anchor::before {
+        content: "";
+        display: block;
+        height: 125px;
+        margin: -125px 0 0;
+    
+    }*/
+}
+
+@media screen and (min-width: 992px) {
+
+    /* Estilo nav */
+    .nav-item {
+        height: 67px;
+        padding: 22px 20px;
+    }
+
+    /* Ajuste del nav */
+    .anchor::before {
+        content: "";
+        display: block;
+        height: 95px;
+        margin: -95px 0 0;
+
+    }
+}

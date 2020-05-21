@@ -1,0 +1,25 @@
+/// Estilos generales para la tabla
+/// @group tablas
+table {
+    border-collapse: inherit;
+    //El normalizador de BootStrap pone collaspe. Y hay que deshabilitarlo con inherit
+    border: $border;
+    border-radius: $border-radio*2;
+    padding: 0.5rem;
+
+    th {
+        border-bottom: $border;
+    }
+
+    tr td:nth-last-child(1) {
+        text-align: center;
+    }
+}
+
+/// Variable inicio para las tablas
+/// @group tablas
+$inicio: 1;
+
+/// Variable de finailización para las tablas
+/// @group tablas
+$fin: 7;

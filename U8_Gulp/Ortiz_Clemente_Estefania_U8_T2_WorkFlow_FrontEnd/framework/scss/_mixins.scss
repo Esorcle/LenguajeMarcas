@@ -1,0 +1,32 @@
+//// @author Estefanía Ortiz
+
+///Mixin para centrar elemento a su padre
+/// @parameter {integer} - Tamaño en porcentaje del margen con respecto al padre 
+@mixin centrado-respecto-padre ($var) {
+    margin: #{$var}% auto ;
+}
+
+///Mixin para dar estilo general a la fuente
+/// @parameter {string} $font-family - Familia de la fuente
+/// @parameter {integer} $font-size - Tamaño de la fuente
+/// @parameter {integer} $line-height - Espaciado entre líneas
+/// @parameter {integer} $letter-spacing - espaciado entre letras
+@mixin estilos-font ($font-family, $font-size, $line-height, $letter-spacing) {
+    font-family: $font-family;
+    font-size: #{$font-size}rem;
+    line-height: $line-height;
+    letter-spacing: #{$letter-spacing}rem;
+}
+
+///Mixin para dar color general a los bordes
+/// @parameter {string} $color - Color del borde
+@mixin border-color ($color) {
+    border-color: $color;
+}
+
+///Mixin para dar color general a los bordes
+/// @parameter {integer} $pixel - Grosor del border
+/// @parameter {string} $pixel - Forma del borde
+@mixin border-style ($pixel, $style){
+    border: #{$pixel}px $style;    
+}
